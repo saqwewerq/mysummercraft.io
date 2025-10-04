@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Summer Craft — Ресурспак</title>
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --accent:#ff8a00;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#071025 0%,var(--bg) 100%);color:#e6eef6;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    .container{width:100%;max-width:920px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:16px;padding:36px;box-shadow:0 8px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#ffd89b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#082033;box-shadow:0 6px 18px rgba(255,138,0,0.12)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .buttons{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);cursor:pointer;text-decoration:none;color:inherit;font-weight:600;transition:transform .12s ease,box-shadow .12s ease}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(2,6,23,0.5)}
+    .btn svg{width:20px;height:20px;flex:0 0 20px}
+    .btn.discord{background:linear-gradient(180deg,#7289da22,#7289da11);border-color:rgba(114,137,218,0.12)}
+    .btn.telegram{background:linear-gradient(180deg,#2aabef22,#2aabef11);border-color:rgba(42,171,239,0.12)}
+    .btn.youtube{background:linear-gradient(180deg,#ff444422,#ff444411);border-color:rgba(255,68,68,0.12)}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+    @media (max-width:520px){.logo{width:56px;height:56px}.card{padding:20px}h1{font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="main">
+      <header>
+        <div class="logo" aria-hidden="true">MSC</div>
+        <div>
+          <h1>My Summer Craft — Ресурспак</h1>
+          <p class="lead">Легкий и тёплый ресурс-пак в стиле летнего настроения. Скачать и ссылки на сообщество ниже.</p>
+        </div>
+      </header>
+
+      <section aria-label="Links" style="margin-top:18px">
+        <div class="buttons">
+          <a class="btn discord" href="https://discord.gg/MW5bKWnRTE" target="_blank" rel="noopener noreferrer" aria-label="Discord — открыть">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7.2 9.6c0.9 0 1.6 0.8 1.6 1.8s-0.7 1.8-1.6 1.8-1.6-0.8-1.6-1.8 0.7-1.8 1.6-1.8zm9.6 0c0.9 0 1.6 0.8 1.6 1.8s-0.7 1.8-1.6 1.8-1.6-0.8-1.6-1.8 0.7-1.8 1.6-1.8z" fill="currentColor" opacity="0.95"/><path d="M21 3H3v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3z" stroke="currentColor" stroke-width="0.3" fill="none" opacity="0.04"/></svg>
+            Discord
+          </a>
+
+          <a class="btn telegram" href="https://t.me/mysummercraft" target="_blank" rel="noopener noreferrer" aria-label="Telegram — открыть">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 3L3 10.5l4.5 1.5L20 5.5 13.5 18.5 15 21 21 3z" fill="currentColor"/></svg>
+            Telegram
+          </a>
+
+          <a class="btn youtube" href="https://www.youtube.com/@Mr_Shoves1" target="_blank" rel="noopener noreferrer" aria-label="YouTube — открыть">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 7.5a2.5 2.5 0 0 0-1.7-1.7C18.9 5 12 5 12 5s-6.9 0-8.3.8A2.5 2.5 0 0 0 2 7.5 26 26 0 0 0 2 12a26 26 0 0 0 0 4.5 2.5 2.5 0 0 0 1.7 1.7C5.1 19 12 19 12 19s6.9 0 8.3-.8a2.5 2.5 0 0 0 1.7-1.7A26 26 0 0 0 22 12a26 26 0 0 0 0-4.5zM10 15V9l5 3-5 3z" fill="currentColor"/></svg>
+            YouTube
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        Все ссылки ВСЕГДА активны: Discord, Telegram и YouTube.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
